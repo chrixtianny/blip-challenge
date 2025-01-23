@@ -149,11 +149,15 @@ Se algum erro ocorrer durante a execução da requisição ao GitHub, a API irá
 ##### Erros Comuns
 - 401 - Unauthorized:
 Ocorre quando o token do GitHub (GIT_TOKEN) não é fornecido ou é inválido.
-#### Certifique-se de incluir um token válido no arquivo .env.
+###### Certifique-se de incluir um token válido no arquivo .env.
+
+- 404 - Not found:
+Ocorre quando acessam um endpoint diferente de `/repos`.
+###### Verifique a url e inclua /repos se necessário.
 
 - 500 - Internal Server Error:
 Indica que houve algum erro interno no servidor, como falha de conexão ou problema ao processar a requisição.
-#### Verifique os logs para identificar o problema ou confira a conexão com o GitHub.
+###### Verifique os logs para identificar o problema ou confira a conexão com o GitHub.
 
 ### Imagens do Carrossel de Valores
 
