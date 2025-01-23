@@ -12,7 +12,7 @@ export async function getRepositories() {
         });
 
         if (!response.ok) {
-            throw new Error(`Error: ${response.status} - Não foi possível buscar os repositórios do GitHub`);
+            throw new Error(`Error: ${response.status} - Não foi possível buscar os repositórios do GitHub, verifique Token e Requisição.`);
         }
 
         const data = await response.json();
