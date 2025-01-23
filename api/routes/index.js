@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import repoRoutes from './repos.js';
+import { getRepos } from '../controllers/repoController.js';
 
 const router = Router();
 
-router.use('/repos', repoRoutes);
+router.use('/repos', getRepos);
 
 export default router;
